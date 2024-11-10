@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css" rel="stylesheet">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js"></script>
+
+  <title>Story Map Exercise</title>
+  <link rel="stylesheet" href="static/css/index.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="left-panel">
+      <h2>渲染的區域</h2>
+      <div class="render-section" id="renderSection" style="display: block;"></div>
+      <svg id="chart" width="100%" height="80vh" style="display: block;"></svg>
+    </div>
+    <div class="right-panel">
+      <div class="spacer"></div>
+      <h2 class="content-part" data-section="distribution">台北市的腳踏車站點分布</h2>
+        <div class="distribution-features">
+
+          <div class="spacer"></div>
+          <div class="content-part" data-section="public">
+              <h3>🚉 捷運站周邊</h3>
+              <p>許多腳踏車站點設置在捷運站出口附近，方便民眾以腳踏車進行「最後一哩」的短距離通勤。</p>
+          </div>
+
+          <div class="spacer"></div>
+          <div class="content-part" data-section="business">
+              <h3>🏙️ 商業區與商圈</h3>
+              <p>例如信義計畫區、東區等地段，腳踏車站點密集分布，以便民眾在各商圈之間輕鬆移動。</p>
+          </div>
+
+          <div class="spacer"></div>
+          <div class="content-part" data-section="tourism">
+              <h3>🌳 公園與觀光景點</h3>
+              <p>如大安森林公園、台北市立美術館等，這些地點不僅服務遊客，也方便市民在休閒活動中使用。</p>
+          </div>
+        </div>
+
+      <div class="spacer"></div>
+      
+      <h2 class="content-part" data-section="2">腳踏車站點數據分析</h2>
+        <p>透過對腳踏車站點的數據進行分析，可以了解市民使用的高峰時段、熱門站點、以及站點之間的車流量分布。此類分析可幫助優化腳踏車的調度，以滿足使用需求。</p>
+      
+      <div class="spacer"></div>
+        
+      <h2 class="content-part" data-section="3">結語</h2>
+        <p>台北市的腳踏車站點分布展示了都市綠色交通的發展方向，
+          提供市民和遊客更多樣化的出行選擇。
+          未來，隨著數據分析技術的應用，站點的設置和服務將更加符合使用者的需求，
+          持續推動台北成為更適合步行與騎乘的友善城市。</p>
+      
+      <div class="big-spacer"></div>
+      <div class="spacer"></div>
+      
+
+    </div>
+  </div>
+  
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="static/js/index.js"></script>
+</body>
+</html>

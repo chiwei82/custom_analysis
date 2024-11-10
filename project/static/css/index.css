@@ -1,0 +1,94 @@
+/* style.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  background-color: #f9f9f9;
+  height: 100vh;
+  overflow: hidden; /* 禁止整個頁面滾動 */
+}
+
+.render-section {
+  width: 100%;
+  height: 80%; /* 或任何您希望的高度 */
+}
+
+.container {
+  display: flex;
+  width: 80%;
+  height: 100vh; /* 讓 container 的高度與視窗一致 */
+  gap: 50px;
+}
+
+.left-panel {
+  width: 60%;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  padding-top: 20px;
+  overflow: hidden;
+}
+
+.left-panel h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.left-panel p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.flavor-group {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.flavor-chart {
+  text-align: center;
+  width: 45%;
+}
+
+.flavor-chart h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.right-panel {
+  width: 40%;
+  height: 100vh;
+  overflow-y: auto; /* 讓右側內容滾動 */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.right-panel::-webkit-scrollbar {
+  display: none;
+}
+
+.right-panel h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.right-panel p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.spacer {
+  height: 50px; /* 自定義高度 */
+  width: 100%; /* 占滿寬度 */
+}
+
+.big-spacer {
+  height: 600px; /* 自定義高度 */
+  width: 100%; /* 占滿寬度 */
+}
